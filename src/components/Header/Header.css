@@ -1,0 +1,20 @@
+nav {
+  background-color: rgb(29, 29, 28);
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-link {
+  text-decoration: none;
+  color: white;
+  margin: 1rem;
+}
+
+.nav-link:hover {
+  color: orange;
+}
+
+nav .active {
+  color: red;
+}
