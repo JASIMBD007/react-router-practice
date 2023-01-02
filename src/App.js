@@ -1,6 +1,7 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import About from './components/About/About';
+import Blog from './components/Blog/Blog';
 import Blogs from './components/Blogs/Blogs';
 import Contact from './components/Contacts/Contact';
 import Error from './components/Error/Error';
@@ -14,6 +15,7 @@ function App () {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/blogs' element={<Blogs />} />
+        <Route path='/blogs/:title' element={<Blog />} />
         <Route path='/contact' element={<Contact />} />
         <Route path='/about' element={<About />} />
         <Route path='*' element={<Error />} />
